@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Kenyan Visit</title>
+    <link href="CSS/style.css" rel="stylesheet">
+</head>
+
+<body>
+    
+    <div class="navigation">
+        <ul>
+            <li style="float:left"><a>Home</a></li> 
+            <li><a>Talk to us</a></li>
+            <li><a>Places to visit</a>
+            <ul>
+               <li><a>the indian ocean</a></li>
+               <li><a>the great rift valley</a></li>
+               <li><a>forests</a></li>
+               <li><a>Cities</a></li>
+           </ul>
+            </li>
+            <li><a>Things to see</a>
+            <ul>
+               <li><a>museums and monuments</a></li>
+               <li><a>marine parks</a></li>
+               <li><a>popular sites</a></li>
+               <li><a>african art</a></li>
+           </ul>
+            </li>
+            <li><a>Things to do</a>
+            <ul>
+                <li><a>go on safari</a></li>
+                <li><a>culture and heritage</a></li>
+                <li><a>events and festival</a></li>
+            </ul>
+            </li>
+            
+            
+           
+        </ul>
+       </div>
+
+       <div class="slider-container">
+
+
+
+        <!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <img src="img1.jpg" style="width:100%">
+      <div class="text">Caption Text</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="img2.jpg" style="width:100%">
+      <div class="text">Caption Two</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="img3.jpg" style="width:100%">
+      <div class="text">Caption Three</div>
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+
+<script>
+    var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 10000); // Change image every 5 seconds
+}
+</script>
+
+<p class="goOnSafari">The diversity of game in Kenya is simply astounding. From the big five to the small five, Kenya’s game parks, reserves and other wildlife protection areas host some of the wildest game thus the reason why this is home for the safari. Dotted in their unique landscapes, geographical features, a vast array of game ensues. The icing on Kenya’s wildlife cake is the annual Wildebeest Migration at the infamous Maasai Mara migration between mid-August and late October. This is the best example of wild nature at its best as hundreds of thousands of wildebeests, zebras, Thomson’s gazelles, topi and elands.</p>
+
+
+<footer class="bg-light py-5">
+  <div class="container">
+    <div class="small text-center text-muted">Copyright &copy; 2019 - Audio Transcription</div>
+  </div>
+</footer>
+
+
+</body>
+</html>
